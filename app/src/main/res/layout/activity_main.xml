@@ -9,10 +9,13 @@
     <Button
         android:id="@+id/button_toast"
         android:layout_width="0dp"
-        android:onClick="showToast"
         android:layout_height="wrap_content"
-        android:background="@color/cardview_light_background"
-        android:text="@string/button_label_toast"
+        android:background="@color/design_default_color_primary"
+        android:onClick="launchSecondActivity"
+        android:text="@string/sayhello"
+        android:textColor="@color/white"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -24,6 +27,9 @@
         android:id="@+id/button_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+
+        android:background="@color/design_default_color_primary"
         android:onClick="countUp"
         android:text="@string/button_label_count"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,8 +47,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/count_initial_value"
         android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textColor="@color/white"
         android:textSize="160sp"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
